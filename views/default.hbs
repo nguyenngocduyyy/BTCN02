@@ -17,20 +17,20 @@
 <body>
     <div class="container">
         <h1>Bé tập tính</h1>
-        <form id="form" method="POST">
+        <form id="form" method="POST" onsubmit="return Validate(event)">
             <div class="row">
                 <label for="a" class="col-sm-3">Số thứ nhất</label>
                 <input type="number" class="form-control form-control-sm col-sm-5" onblur="Warning('')" id="a" name="a" value="{{a}}">
 
                 <div class="form-check col-sm-2">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" id="plus" value="plus" name="calculation" checked="{{plus}}">Cộng
+                        <input type="radio" class="form-check-input" id="plus" value="plus" name="calculation" {{{plus}}}>Cộng
                     </label>
                 </div>
 
                 <div class="form-check col-sm-2">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" id="minus" value="minus" name="calculation" checked="{{minus}}">Trừ
+                        <input type="radio" class="form-check-input" id="minus" value="minus" name="calculation" {{{minus}}}>Trừ
                     </label>
                 </div>
             </div>
@@ -40,13 +40,13 @@
 
                 <div class="form-check col-sm-2">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" id="multiply" value="multiply" name="calculation" checked="{{multiply}}">Nhân
+                        <input type="radio" class="form-check-input" id="multiply" value="multiply" name="calculation" {{{multiply}}}>Nhân
                     </label>
                 </div>
 
                 <div class="form-check col-sm-2">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" id="divide" value="divide" name="calculation" checked="{{divide}}">Chia
+                        <input type="radio" class="form-check-input" id="divide" value="divide" name="calculation" {{{divide}}}>Chia
                     </label>
                 </div>
             </div>
